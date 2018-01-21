@@ -1,0 +1,231 @@
+body{
+	font-size: 12px;
+	background-color: #F5F5F5;
+}
+header{
+	width: 100%;
+	height: 13.77rem;
+	background-image: url('../img/screen.png'),linear-gradient(#3BBCFF,#47EAFF);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: bottom;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 545879 */
+  src: url('https://at.alicdn.com/t/font_545879_of9y8pepf1v5nrk9.eot ');
+  src: url('https://at.alicdn.com/t/font_545879_of9y8pepf1v5nrk9.eot?#iefix ') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_545879_of9y8pepf1v5nrk9.woff ') format('woff'),
+  url('https://at.alicdn.com/t/font_545879_of9y8pepf1v5nrk9.ttf ') format('truetype'),
+  url('https://at.alicdn.com/t/font_545879_of9y8pepf1v5nrk9.svg#iconfont ') format('svg');
+}
+.dingwei{
+	font-family: iconfont;
+}
+.now_city_box{
+	font-size: 0.39rem;
+	color: #fff;
+	text-align: center;
+	line-height: 1.6rem;
+	/* 只限文字 */
+}
+.now_air_box{
+	width: 2.1rem;
+	height: 1.26rem;
+	background-color: #F1AB62;
+	border-radius: .2rem;
+	margin-left: .27rem;
+	padding-top: 0.2rem;
+}
+.now_air_box span{
+	display: block;
+	text-align: center;
+	font-size: .3rem;
+}
+.now_temp{
+	font-size: 1.29rem;
+	color: #fff;
+	text-align: center;
+	font-weight: 400;
+	margin-top: .52rem;
+	padding-left: 1.37rem;
+}
+.now_weather{
+	font-size:.58rem;
+	color: #fff;
+	text-align: center;
+	font-weight: 400;
+	margin-top: .45rem;
+}
+.now_wind{
+	font-size: .58rem;
+	color: #fff;
+	text-align: center;
+	font-weight: 400;
+	margin-top: .45rem;
+}
+.prompt{
+	font-size: .37rem;
+	color: #fff;
+	text-align: center;
+	font-weight: 400;
+	margin-top: 1.31rem;
+}
+.next{
+	width: 100%;
+	height: 2.94rem;
+	border-bottom: .03rem solid #E4E4E4;
+	padding: .72rem 0;
+	background-color: white;
+}
+.next_box{
+	width: 50%;
+	height: 100%;
+	float: left;
+	padding: 0 0.58rem;
+}
+.next_box1{
+	border-right: .03rem solid #E4E4E4;
+}
+.next_date,.today_weather,.tomorrow_weather{
+	float: left;
+}
+.today_temp,.today_img,.tomorrow_img{
+	float: right;
+}
+.next_top,.next_bottom{
+	overflow: hidden;
+}
+.today_img,.tomorrow_img{
+	width: .78rem;
+	height: .78rem;
+}
+.next_bottom{
+	margin-top: .36rem;
+}
+.hours{
+	width: 100%;
+	height: 3.9rem;
+	background-color: #fff;
+	margin-top: .27rem;
+	border-bottom: 0.03rem solid #e4e4e4;
+	border-top: 0.03rem solid #e4e4e4;
+	overflow: hidden;
+	padding:0.88rem 0;
+}
+.hours_content{
+    height: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+.hours_content li{
+	width: 2rem;
+	height: 100%;
+	padding: 0 .6rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: center;
+	flex-shrink: 0;
+}
+.hours_img{
+	width: .58rem;
+	height: .58rem;
+}
+.weeks{
+	width: 100%;
+	height: 11.16rem;
+	background-color: #fff;
+	margin-top: .27rem;
+	border-bottom: 0.03rem solid #e4e4e4;
+	border-top: 0.03rem solid #e4e4e4;
+	overflow: hidden;
+	padding: 0.88rem 0;
+}
+.weeks_content{
+	height: 100%;
+	display: flex;
+	overflow-x: scroll;
+}
+.weeks_content li{
+	width: 2rem;
+	height: 100%;
+	background-color: white;
+	display: flex;/* 弹性布局 */
+	flex-wrap: wrap;/* 设置弹性布局换行*/
+	align-content: space-between;/* 多行两端对齐 */
+	justify-content: center;
+	flex-shrink: 0;
+}
+.weeks_day_weather,.weeks_temp_max,.weeks_temp_min{
+	padding: 0 .2rem;
+}
+.weeks_img{
+	width: .58rem;
+	height: .58rem;
+}
+.weeks_content span{
+	width: 2rem;
+	text-align: center;
+	display: block;
+}
+.citys{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F6F6F6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.search_box{
+	width: 100%;
+	height: 1.28rem;
+	background-color: #fff;
+	padding: 0 0.3rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.search{
+	width: 9rem;
+	height: 0.87rem;
+	background-color: #e2e2e2;
+	border: 0;
+	padding-left: 0.3rem;
+	border-radius: 0.1rem;
+}
+.confirm{
+	font-size: .5rem;
+	color: #76A9FF;
+}
+.citys_box{
+	width: 100%;
+	height: 90vh;
+	overflow-y: auto;
+	padding: 0 0.3rem;
+}
+.citys_title1{
+    font-size: .5rem;
+    color: #999;
+    line-height: .8rem;
+}
+.citys_list li{
+    width: 2.93rem;
+    height: .84rem;
+    background-color: #fff;
+    font-size: .44rem;
+    text-align: center;
+    line-height: .84rem;
+    border: .03rem solid #e0e0e0;
+    border-radius: .1rem;
+    float: left;
+    margin-bottom: .4rem;
+    margin-right: .4rem;
+}
+/* ::-webkit-scrollbar{
+	height: 0;
+} */
+.citys_box section{
+    overflow: hidden;
+}
